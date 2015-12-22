@@ -28,4 +28,10 @@ gulp.task('js', function(){
     .pipe(gulp.dest('build/js'));
 })
 
-gulp.task('default', ['sass-compile', 'sanitize', 'js', 'html']);
+gulp.task('move-images', function(){
+  gulp.src('assets/images/*.png')
+  .pipe(watch('assets/images/*.png'))
+  .pipe(gulp.dest('build/assets/images'));
+})
+
+gulp.task('default', ['sass-compile', 'sanitize', 'js', 'html', 'move-images']);
