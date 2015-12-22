@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'AkzidenzGrotesk-Medium';
+  src: url("/assets/fonts/AkzidenzGrotesk-Medium.otf"); }
+
+@font-face {
+  font-family: 'AkzidenzGrotesk-Regular';
+  src: url("/assets/fonts/AkzidenzGrotesk-Regular.otf"); }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.title {
+  font-size: 48px;
+  margin: 0; }
+
+p {
+  font-size: 18px; }
+
+.landing {
+  font-family: 'AkzidenzGrotesk-Medium';
+  height: 100vh;
+  background-image: url("/assets/images/background_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px; }
+  .landing .logo {
+    font-family: 'AkzidenzGrotesk-Medium';
+    margin-bottom: 200px; }
+  .landing .button {
+    border: 5px solid white;
+    border-radius: 62.5rem;
+    height: 65px;
+    width: 250px;
+    color: white;
+    padding-top: 7px;
+    transition: 0.2s; }
+    .landing .button p {
+      font-size: 20px;
+      text-transform: lowercase;
+      font-weight: 100px; }
+    .landing .button:hover {
+      color: white;
+      border: 5px solid white;
+      opacity: 0.5;
+      transition: 0.2s; }
+
+.description {
+  font-family: 'AkzidenzGrotesk-Medium';
+  height: 600px; }
+  .description .navigation {
+    box-sizing: border-box;
+    padding: 40px; }
+    .description .navigation ul {
+      text-align: right;
+      list-style: none; }
+      .description .navigation ul li {
+        display: inline-block; }
+        .description .navigation ul li a {
+          text-decoration: none;
+          margin: 0 20px;
+          font-size: 24px;
+          color: black; }
+          .description .navigation ul li a:hover {
+            text-decoration: underline; }
+  .description p {
+    text-align: right;
+    font-family: 'AkzidenzGrotesk-Regular'; }
+
+.pictures {
+  height: 400px;
+  background-color: #5284FF; }
+  .pictures .wolf {
+    background-image: url("/assets/images/wolf.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; }
+  .pictures .blue {
+    font-family: 'AkzidenzGrotesk-Medium';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+    .pictures .blue h1 {
+      text-align: center;
+      color: white;
+      font-size: 48px; }
+
+.icons-section {
+  font-family: 'AkzidenzGrotesk-Regular';
+  height: 600px; }
+  .icons-section .container {
+    height: 100%;
+    padding: 70px 0; }
+  .icons-section .product {
+    height: 33.33%; }
+  .icons-section .icon {
+    height: 100px;
+    width: 100px; }
+
+.ocean {
+  height: 620px;
+  background-image: url("/assets/images/ocean.png");
+  background-size: cover;
+  background-position: center; }
+
+.footer {
+  font-family: 'AkzidenzGrotesk-Medium';
+  box-sizing: border-box;
+  padding: 98px 0;
+  text-align: center;
+  min-height: 200px;
+  width: 100%;
+  color: white;
+  background-color: #171716;
+  display: inline-block; }

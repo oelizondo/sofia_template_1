@@ -1,20 +1,151 @@
 @import 'variables';
 @import 'mixins';
+@font-face {
+  font-family: 'AkzidenzGrotesk-Medium';
+  src: url('/assets/fonts/AkzidenzGrotesk-Medium.otf');
+}
+@font-face {
+  font-family: 'AkzidenzGrotesk-Regular';
+  src: url('/assets/fonts/AkzidenzGrotesk-Regular.otf');
+}
 
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
+
 .title {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 3px;
-    span { font-family: 'Tangerine', cursive; font-size: 40px; margin-left: 20px; }
+  font-size: 48px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.landing {
+  font-family: 'AkzidenzGrotesk-Medium';
+  height: 100vh;
+  background-image: url('/assets/images/background_1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+
+  .logo {
+    font-family: 'AkzidenzGrotesk-Medium';
+    margin-bottom: 200px;
+  }
+
+  .button {
+    border: 5px solid white;
+    border-radius: 62.5rem;
+    height: 65px;
+    width: 250px;
+    color: white;
+    padding-top: 7px;
+    transition: 0.2s;
+    p {
+      font-size: 20px;
+      text-transform: lowercase;
+      font-weight: 100px;
+    }
+    &:hover {
+      color: white;
+      border: 5px solid white;
+      opacity: 0.5;
+      transition: 0.2s
+    }
+  }
+}
+
+.description {
+  font-family: 'AkzidenzGrotesk-Medium';
+  .navigation {
+    @include box;
+    padding: 40px;
+    ul {
+      text-align: right;
+      list-style: none;
+      li {
+        display: inline-block;
+        a {
+          text-decoration: none;
+          margin: 0 20px;
+          font-size: 24px;
+          color: black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    text-align: right;
+    font-family: 'AkzidenzGrotesk-Regular';
+  }
+
+  height: 600px;
+}
+
+.pictures {
+  height: 400px;
+  background-color: #5284FF;
+  .wolf {
+    background-image: url('/assets/images/wolf.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .blue {
+    font-family: 'AkzidenzGrotesk-Medium';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 48px;
+    }
+  }
+}
+
+.icons-section {
+  font-family: 'AkzidenzGrotesk-Regular';
+  height: 600px;
+  .container {
+    height: 100%;
+    padding: 70px 0;
+  }
+  .product {
+    height: 33.33%;
+  }
+  .icon {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.ocean {
+  height: 620px;
+  background-image: url('/assets/images/ocean.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  font-family: 'AkzidenzGrotesk-Medium';
+  @include box;
+  padding: 98px 0;
+  text-align: center;
+  min-height: 200px;
+  width: 100%;
+  color: white;
+  background-color: #171716;
+  display: inline-block;
 }
